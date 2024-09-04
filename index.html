@@ -1,46 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <title>Calculator</title>
-   <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-  
-   <div id="calc">
-      <div id="content">
-         <form>
-            <div id="output">
-               <input type="text" id='res'>
-            </div>
-            <div class="btn">
-               <input type="button" value='C' onclick="Clear()" id="clear">
-               <input type="button" value='←' onclick="Back()" id="backspace">
-               <input type="button" value='%' onclick="Solve('%')">
-               <input type="button" value='/' onclick="Solve('/')">
-               <br>
-               <input type="button" value='7' onclick="Solve('7')">
-               <input type="button" value='8' onclick="Solve('8')">
-               <input type="button" value='9' onclick="Solve('9')">
-               <input type="button" value='x' onclick="Solve('*')">
-               <br>
-               <input type="button" value='4' onclick="Solve('4')">
-               <input type="button" value='5' onclick="Solve('5')">
-               <input type="button" value='6' onclick="Solve('6')">
-               <input type="button" value='-' onclick="Solve('-')">
-               <br>
-               <input type="button" value='1' onclick="Solve('1')">
-               <input type="button" value='2' onclick="Solve('2')">
-               <input type="button" value='3' onclick="Solve('3')">
-               <input type="button" value='+' onclick="Solve('+')">
-               <br>
-               <input type="button" value='00' onclick="Solve('00')">
-               <input type="button" value='0' onclick="Solve('0')">
-               <input type="button" value='.' onclick="Solve('.')">
-               <input type="button" value='=' onclick="Result()">
-              
-         </form>
+<header class="header">
+    <a href="#" class="logo">Portfolio</a>
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+        
+
+    </nav>
+</header>
+
+<section class="home" id="home">
+    <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Rudrakash Borana</h1>
+        <h3>And I'm a <span class="multiple-text"></span></h3>
+        <p>Expertise and enjoying to create Frontend Design of Website.</p>
+        <div class="social-media">
+            <a href="https://www.facebook.com/profile.php?id=61564870637307&mibextid=ZbWKwL"><i class='bx bxl-facebook'></i></a>
+            <a href="https://wa.me/qr/WCMODOSIZKUTC1"><i class='bx bxl-whatsapp'></i></a> 
+            <a href="https://www.instagram.com/codermania._.rb/?utm_source=ig_web_button_share_sheet"><i class='bx bxl-instagram-alt' ></i></a>
+            <a href="https://www.linkedin.com/in/rudrakash-borana-b710a3322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin'></i></a>
+        </div>
+        <a href="cv copy.png" class="btn">Download CV</a>
+    </div>
+    <div class="home-img">
+        <img src="rudrakash.jpeg">
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="about.jpeg">
+    </div>
+    <div class="about-content">
+    <h2 class="heading">About <span>Me</span></h2>
+    <h3>Frontend Developer!</h3>
+    <p>Hii
+       My name is Rudrakash Borana<br>
+       I like to learn new things.<br>
+       Expertise in Frontend designing and learning new things in Web Development.
+    </p>
+    <a href="#" class="btn">Read More</a>
+</div>
+</section>
+
+<section class="services" id="services">
+    <h2 class="heading">Our <span>Services</span></h2>
+    <div class="services-container">
+        <div class="services-box">
+          <i class='bx bx-code-alt'></i>
+          <h3>Web Development</h3>
+          <p>In Web Development we try to provide a Frontend as Best,Creative and Attractive as possible. </p>
+          <a href="#" class="btn">Read More</a>
+        </div>
+        <div class="services-box">
+            <i class='bx bx-edit-alt'></i>
+            <h3>Digital Illustration</h3>
+            <p>We provide hand-made Digital Illustration for your's loved once and for yourself</p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+    </div>
+</section>
+
+<section class="portfolio" id="portfolio">
+    <h2 class="heading">Latest <span>Project</span>
+    </h2>
+    <div class="portfolio-container" >
+        <div class="portfolio-box">
+        <img src="music.jpg">
+        <div class="portfolio-layer">
+        <h4>Spotify Clone</h4>
+        <p></p>
+        <a href="spotify/index.html"><i class='bx bx-link-external'></i></a>
+         </div>
       </div>
-   </div>
-   <script src='main.js'></script>
+      <div class="portfolio-box">
+        <img src="calculator.jpg">
+        <div class="portfolio-layer">
+        <h4>Calculator</h4>
+        <p></p>
+        <a href="calci/index.html"><i class='bx bx-link-external'></i></a>
+         </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="sign in photo.avif">
+        <div class="portfolio-layer">
+        <h4>Sign In Page</h4>
+        <p></p>
+        <a href="login page/index.html"><i class='bx bx-link-external'></i></a>
+         </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="shop.jpeg">
+        <div class="portfolio-layer">
+        <h4>Flipkart Clone</h4>
+        <p></p>
+        <a href="flipkart/index.html"><i class='bx bx-link-external'></i></a>
+         </div>
+      </div>
+    </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2024 by Rudrakash Borana | All Rights Reserved. </p>
+        </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
